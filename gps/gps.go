@@ -105,8 +105,6 @@ func (n *Neo8) setListener() {
 }
 
 func (n *Neo8) updateState(in string) {
-	//fmt.Println(in[4:7])
-	//fmt.Println(in)
 	var err error
 	var fl float64
 	var ui uint64
