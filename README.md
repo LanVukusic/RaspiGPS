@@ -61,7 +61,7 @@ Following functions are available:
 | Lat            | float64  | Latitude                                                      |
 | NS             | string   | North / South part of latitude                                |
 | Lng            | float64  | Longitude                                                     |
-| WE             | string   | West / East part if Longitude                                 |
+| WE             | string   | West / East part of Longitude                                 |
 | Fix            | uint64   | GPS fix type; described below                                 |
 | SatTracking    | uint64   | Number of satellites used in tracking                         |
 | SatInView      | uint64   | Number of satellites in view                                  |
