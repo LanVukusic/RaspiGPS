@@ -16,7 +16,7 @@ All serial and Nmea compliant GPS modules
 ### Pinout:  
 Pins on the raspberry are labeled according to the diagram below, referenced with numbers running from 1 to 40  
 
-<img src="https://raw.githubusercontent.com/LanVukusic/RaspiGPS/master/pinout.png" width="500">
+<img src="https://raw.githubusercontent.com/LanVukusic/RaspiGPS/master/pinout.png" width="800">
 
 * __PIN 8__ serial TX (gpio15)    -  gps RX
 * __PIN 10__ serial RX (gpio14)   -  gps TX
