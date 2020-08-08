@@ -1,4 +1,0 @@
-dietpi@DietPi:/mnt/dietpi_userdata$
-
-cp vn.a /run/user/1000/gvfs/smb-share:server=dietpi,share=dietpi/vn.a
-
