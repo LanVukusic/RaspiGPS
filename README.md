@@ -13,13 +13,14 @@ All serial and Nmea compliant GPS modules
 * Probably all Ublox series gps
 * maybe others?
 
-### Pinout is as follows:  
+### Pinout:  
 Pins on the raspberry are labeled according to the diagram below, referenced with numbers running from 1 to 40  
 
 <img src="https://www.mreeco.com/image/catalog/Website%20Images/raspberry-pi-zero-w-v1.3-development-board-in-pakistan_2.png" width="500">
 
-* __PIN 10__ serial RX (gpio14)   -  gps TX
 * __PIN 8__ serial TX (gpio15)    -  gps RX
+* __PIN 10__ serial RX (gpio14)   -  gps TX
+
 
 
 ### Library is dependent on an external library:  
@@ -75,10 +76,10 @@ Following functions are available:
 | Fix            | uint64   | GPS fix type; described below                                 |
 | SatTracking    | uint64   | Number of satellites used in tracking                         |
 | SatInView      | uint64   | Number of satellites in view                                  |
-| Hdop           | float64  | Horizontal dilution of precision/radius of the circle in meters |
-| Alti           | float64  | Altitude above sea level in meters                            |
-| TrueTrack      | float64  | Heading track expressed in degrees azimuth                    |
-| GroundSpeedKmh | float64  | Speed above ground in Kilometers per hour                     |
+| Hdop           | float64  | Horizontal dilution of precision aka accuracy on land.[meters]|
+| Alti           | float64  | Altitude above sea level [meters]                            |
+| TrueTrack      | float64  | Heading track [degrees azimuth]                    |
+| GroundSpeedKmh | float64  | Speed above ground in [Km/h]                     |
 | SNR            | float64  | Signal to noise ratio                                         |
 
 
