@@ -30,40 +30,27 @@ Pins on the raspberry are labeled according to the diagram below, referenced wit
 Here is a sample code which connects and recieves data from a gps module.  
 
 
-```go
-package main
+```package main
 
 import (
-	"bufio"
 	"fmt"
-	"os"
+	"time"
 
-	"./LORA"
-	"github.com/warthog618/gpiod/device/rpi"
+	"./gps"
 )
 
-var a LORA.Comms
+var a gps.Neo8
 
 func main() {
-	// https://pi4j.com/1.2/pins/model-zero-rev1.html
-	a.Init("gpiochip0", rpi.J8p12, 1) //gpio_chip, rpi pin for settings lora mode, minimal read size
-	a.GetInfo()  // prints our gpio chip and pin number
+	a.Init("/dev/serial0")
 
-	// 1 indicates that we call back evey "1" recieved byte of data.
-	//if you wish to wait for a bigger chunk, set number higher
-	a.SetLoraListener(1, loraCallback)
-
-	reader := bufio.NewReader(os.Stdin)
 	for {
-		text, _ := reader.ReadString('\n')
-		a.WriteString(text)
+		time.Sleep(1 * time.Second)
+		fmt.Printf("Position: %g %s, %g %s with %d satelites\n", a.Lat, a.NS, a.Lng, a.WE, a.SatTracking)
 	}
 
 }
 
-func loraCallback(b []byte) {
-	fmt.Println(string(b))
-}
 ```
 
 Following functions are available:  
