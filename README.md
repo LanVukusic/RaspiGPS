@@ -42,7 +42,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/LanVukusic/RaspiGPS"
+	"github.com/LanVukusic/RaspiGPS/gps"
 )
 
 var a gps.Neo8
