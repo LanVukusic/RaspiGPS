@@ -13,6 +13,11 @@ All serial and Nmea compliant GPS modules
 * Probably all Ublox series gps
 * Contact me if you find that your device works
 
+### Installation:
+```
+go get github.com/LanVukusic/RaspiGPS
+```
+
 ### Pinout:  
 Pins on the raspberry are labeled according to the diagram below, referenced with numbers from 1 to 40  
 
@@ -37,7 +42,7 @@ import (
 	"fmt"
 	"time"
 
-	"./gps"
+	"github.com/LanVukusic/RaspiGPS"
 )
 
 var a gps.Neo8
