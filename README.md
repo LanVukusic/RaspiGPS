@@ -1,5 +1,5 @@
 # RaspiGPS 📡
-## RaspberryPi library for interfacing with GPS serial hardware
+## RaspberryPi GPS library written in Go for interfacing with GPS serial hardware
 This is a library that was written to work with any serial enabled gps module. I had only an option to test the Neo 8 gps, but it should work with any NMEA compliant device.
 Please leave a star if you end up using it in a project. It means a tone to me ⭐ 
 It was written for a series of serial enabled extension boards available from [Aliexpress](https://www.aliexpress.com/item/32325428866.html?spm=a2g0s.9042311.0.0.27424c4dH6kF1l)   
