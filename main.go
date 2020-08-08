@@ -7,10 +7,6 @@ import (
 	"github.com/LanVukusic/RaspiGPS/gps"
 )
 
-func hello() {
-	fmt.Println("Hello world goroutine")
-}
-
 var a gps.Neo8
 
 func main() {
