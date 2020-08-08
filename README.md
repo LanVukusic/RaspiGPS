@@ -30,7 +30,8 @@ Pins on the raspberry are labeled according to the diagram below, referenced wit
 Here is a sample code which connects and recieves data from a gps module.  
 
 
-```package main
+```go
+package main
 
 import (
 	"fmt"
