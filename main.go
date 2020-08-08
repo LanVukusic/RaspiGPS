@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"time"
 
-	"https://github.com/LanVukusic/RaspiGPS"
+	"github.com/LanVukusic/RaspiGPS/gps"
 )
 
 func hello() {
