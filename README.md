@@ -43,6 +43,7 @@ import (
 var a gps.Neo8
 
 func main() {
+	// replace "/dev/serial0" with the serial interface you are using
 	a.Init("/dev/serial0")
 
 	for {
